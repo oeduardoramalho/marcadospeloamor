@@ -217,7 +217,7 @@ body {
     }
 
     .conteudo__apresentacao__titulo {
-        font-size: 2.8rem;
+        font-size: 2.52rem;
     }
 
     .conteudo__apresentacao__subtitulo {
@@ -243,7 +243,7 @@ body {
 
 @media (max-width: 572px) {
     .conteudo__apresentacao__titulo {
-        font-size: 2.7rem;
+        font-size: 2.43rem;
     }
     
     .conteudo__apresentacao__texto {
