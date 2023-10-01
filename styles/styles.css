@@ -241,7 +241,11 @@ body {
     }
 }
 
-@media (max-width: 572px) {    
+@media (max-width: 572px) {
+    .conteudo__apresentacao__titulo {
+        font-size: 2.43rem;
+    }
+    
     .conteudo__apresentacao__texto {
         font-size: 1.08rem;
     }
@@ -252,7 +256,7 @@ body {
         padding: 1.5rem 0 1.05rem 0;
     }
 
-
+    
     .conteudo__apresentacao__subtitulo {
         font-size: 1.12rem;
     }
