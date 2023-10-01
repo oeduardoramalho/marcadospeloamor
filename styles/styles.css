@@ -247,12 +247,6 @@ body {
     }
 }
 
-@media (max-width: 552px) {
-    .conteudo__apresentacao__titulo {
-        font-size: 2.6rem;
-    }
-}
-
 @media (max-width: 532px) {
     .cabecalho__conteudo__logo {
         padding: 1.5rem 0 1.05rem 0;
