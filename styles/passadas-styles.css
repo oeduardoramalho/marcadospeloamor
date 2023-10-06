@@ -144,10 +144,9 @@ li a {
 .tabela {
     table-layout: fixed;
     font-family: var(--fonte-secundaria);
-    margin: 0 4%;
+    margin: 0 7.5%;
     border-collapse: collapse;
-    width: 92%;
-    max-width: 915px;
+    width: calc(100vw - 15%);
 }
 
 .tabela__titulo {
@@ -382,6 +381,13 @@ strong {
         font-size: 0.9rem;
         padding: 0.6rem 0.45rem;
         border: 2px solid var(--cor-secundaria);
+    }
+}
+
+@media (min-width: 1060px) {
+    .tabela {
+        margin: 0;
+        max-width: 915px;
     }
 }
 
