@@ -111,7 +111,8 @@ body {
     font-size: 1.4rem;
     list-style-type: none;
     gap: 0.1em;
-    margin-bottom: 1em
+    margin-bottom: 1em;
+    max-width: 85%;
 }
 
 .conteudo__links__musicas p {
