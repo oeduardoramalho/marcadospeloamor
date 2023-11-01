@@ -99,6 +99,14 @@ body {
     color: var(--cor-secundaria);
 }
 
+.aviso {
+    font-family: var(--fonte-primaria);
+    font-weight: 700;
+    font-size: 0.39rem;
+    width: calc(100vw - 15%);
+    max-width: 915px;
+}
+
 .conteudo__tabelas {
     display: flex;
     flex-direction: column;
@@ -208,6 +216,10 @@ strong {
         font-size: 1.26rem;
     }
 
+    .aviso {
+        font-size: 0.49rem;
+    }
+
     .conteudo__tabelas {
         gap: 1.05rem;
     }
@@ -255,6 +267,10 @@ strong {
         font-size: 1.32rem;
     }
 
+    .aviso {
+        font-size: 0.513rem;
+    }
+
     .conteudo__tabelas {
         gap: 1.1rem;
     }
@@ -300,6 +316,10 @@ strong {
 
     .conteudo__titulo {
         font-size: 1.38rem;
+    }
+
+    .aviso {
+        font-size: 0.54rem;
     }
 
     .conteudo__tabelas {
@@ -351,6 +371,10 @@ strong {
 
     .conteudo__titulo {
         font-size: 1.47rem;
+    }
+
+    .aviso {
+        font-size: 0.57rem;
     }
 
     .conteudo__tabelas {
@@ -407,6 +431,10 @@ strong {
         font-size: 1.67rem;
     }
 
+    .aviso {
+        font-size: 0.646rem;
+    }
+
     .conteudo__tabelas {
         gap: 1.39rem;
     }
@@ -457,6 +485,10 @@ strong {
 
     .conteudo__titulo {
         font-size: 1.92rem;
+    }
+
+    .aviso {
+        font-size: 0.746rem;
     }
 
     .conteudo__tabelas {
@@ -518,6 +550,10 @@ strong {
         font-size: 2rem;
     }
 
+    .aviso {
+        font-size: 0.855rem;
+    }
+
     .conteudo__tabelas {
         gap: 1.83rem;
     }
@@ -564,6 +600,10 @@ strong {
 
     .conteudo__titulo {
         font-size: 2rem;
+    }
+
+    .aviso {
+        font-size: 0.956rem;
     }
 
     .conteudo__tabelas {
@@ -625,6 +665,10 @@ strong {
         font-size: 2rem;
     }
 
+    .aviso {
+        font-size: 1.057rem;
+    }
+
     .conteudo__tabelas {
         gap: 2.266rem;
     }
@@ -671,6 +715,10 @@ strong {
 
     .conteudo__titulo {
         font-size: 2rem;
+    }
+
+    .aviso {
+        font-size: 1.143rem;
     }
 
     .conteudo__tabelas {
@@ -723,6 +771,10 @@ strong {
 
     .conteudo__titulo {
         font-size: 2rem;
+    }
+
+    .aviso {
+        font-size: 1.275rem;
     }
 
     .conteudo__tabelas {
@@ -782,6 +834,10 @@ strong {
 
     .conteudo__titulo {
         font-size: 2rem;
+    }
+
+    .aviso {
+        font-size: 1.4rem;
     }
 
     .conteudo__tabelas {
