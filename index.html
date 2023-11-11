@@ -1,49 +1,56 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="U-XA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marcados Pelo Amor</title>
-    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
-    <link rel="apple-touch-icon" sizes="583x583" href="./assets/apple-touch-icon.png" type="image/png">
-    <link rel="stylesheet" href="./styles/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="583x583" href="./images/apple-touch-icon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <header class="cabecalho">
-        <div class="cabecalho__conteudo">
-            <a class="cabecalho__conteudo__logo" href="index.html">
-                <img class="cabecalho__conteudo__logo" src="./assets/logo-escrito-mma-black&red.png" alt="Logo MMA">
-            </a>
-            <nav class="cabecalho__conteudo__nav">
-                <a class="cabecalho__conteudo__nav__links" href="manha.html">Manhã</a>
-                <a class="cabecalho__conteudo__nav__links" href="noite.html">Noite</a>
-                <!-- <a class="cabecalho__conteudo__nav__links" href="vocal.html">Vocal</a> -->
-                <a class="cabecalho__conteudo__nav__links" href="escala.html">Escala</a>
-                <a class="cabecalho__conteudo__nav__links" href="passadas.html">Passadas</a>
-            </nav>
-        </div>
+        <nav class="cabecalho__nav">
+            <a class="cabecalho__link ativo" href="setlists.html">Setlists</a>
+            <a class="cabecalho__link" href="escala.html">Escala</a>
+            <a class="cabecalho__link" href="cultos-passados.html">Cultos<br>
+                 passados</a>
+        </nav>
+
+        <a class="cabecalho__logo-link" href="index.html">
+            <img class="cabecalho__logo-imagem" src="./images/logo-escrito-mma-black&red.png">
+        </a>
     </header>
+
     <main class="conteudo">
-        <section class="conteudo__apresentacao">
-            <h1 class="conteudo__apresentacao__titulo">Marcados Pelo Amor</p>
-            <h2 class="conteudo__apresentacao__subtitulo">Ministério de louvor da Igreja Batista Cristã de Brasília</h2>
-            <!-- <p class="conteudo__apresentacao__texto">Navegue pelas páginas para conferir as playlists, cifras e os mapas dos cultos e ensaios ou a escala mensal.</p> -->
-            <p class="conteudo__apresentacao__texto">Este site é para uso interno dos integrantes do ministério, não devendo ser compartilhado a outros.</p>
-        </section>
-        <img class="conteudo__logo-footer" src="./assets/logo-desenho-mma-black&red.png" alt="Logo MMA">
+        <h1 class="conteudo__titulo">Marcados Pelo Amor</h1>
+        <h2 class="conteudo__subtitulo">Ministerio de louvor da Igreja Batista Cristã de Brasília</h2>
+        <p class="conteudo__texto">Este site é para uso interno dos integrantes do ministério, não devendo ser compartilhado a outros.</p>
     </main>
+    
     <footer class="rodape">
-        <section class="rodape__redes-container">
-            <a class="rodape__link-redes" href="https://www.instagram.com/ministeriomarcadospeloamor" target="_blank">
-                <i class="fa-brands fa-instagram"></i>            
-            </a>
-            <a class="rodape__link-redes" href="https://www.facebook.com/ministeriomarcadospeloamor" target="_blank">
-                <i class="fa-brands fa-facebook"></i>
-            </a>
+        <img class="rodape__logo" src="./images/logo-desenho-mma-black&red.png">
+
+        <section class="rodape__conteudo">
+            <div class="rodape__links">
+                <a class="rodape__link" href="https://www.instagram.com/ministeriomarcadospeloamor/" target="_blank">
+                    <span class="fa-brands fa-instagram"></span>
+                </a>
+                <a class="rodape__link" href="https://www.facebook.com/ministeriomarcadospeloamor/" target="_blank">
+                    <span class="fa-brands fa-facebook"></span>
+                </a>
+            </div>
+
+            <p class="rodape__texto">Ministério Marcados Pelo Amor</p>
         </section>
-        <p class="rodape__texto">© Marcados Pelo Amor - Todos os direitos reservados.</p>
     </footer>
 </body>
+
 </html>

@@ -1,0 +1,182 @@
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 92vw;
+    max-width: 1024px;
+    gap: calc(92vw * 0.0437517091);
+}
+
+.conteudo__meses {
+    display: flex;
+    flex-direction: column;
+    gap: calc(92vw * 0.125004883);
+}
+
+.conteudo__mes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.escala-titulo {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.passados-titulos {
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: calc(92vw * 0.0219735146);
+}
+
+.aviso {
+    align-self: flex-start;
+    font-size: calc(92vw * 0.0207820618);
+    font-weight: 700;
+}
+
+
+.tabelas {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    gap: calc(92vw * 0.0468768311);
+}
+
+.tabela, .tabela__titulos, .tabela__titulo, .tabela__corpo, .tabela__conteudo {
+    border: calc(92vw * 0.0019532013) solid var(--preto);
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.tabela-isolada {
+    width: calc(100% / 3);
+}
+
+.tabela__titulos, .tabela__corpo {
+    font-family: var(--fonte-secundaria);
+}
+
+caption {
+    font-size: calc(92vw * 0.0203132935);
+    font-weight: 700;
+    margin-bottom: calc(92vw * 0.0078128052);
+    text-align: left;
+}
+
+.tabela__titulo {
+    background-color: var(--vermelho);
+    font-size: calc(92vw * 0.0143755615);
+    font-weight: 700;
+    padding: calc(92vw * 0.0023438416);
+}
+
+.tabela__conteudo {
+    font-size: calc(92vw * 0.0140630493);
+    font-weight: 500;
+    padding: calc(92vw * 0.0046876831) calc(92vw * 0.0070315247);
+}
+
+.tabela__conteudo-data {
+    vertical-align: middle;
+}
+
+.tabela__conteudo strong {
+    font-weight: 700;
+    letter-spacing: calc((92vw * 0.0003418102) * -1);
+}
+
+.centralizar-texto {
+    display: block;
+    text-align: center;
+}
+
+.cultos-e-ensaios {
+    margin-top: calc(92vw * 0.0468768311);
+}
+
+.rodape__logo--com-calc {
+    height: calc(92vw * 0.1562561038);
+    margin: calc(92vw * 0.0341810227) 0 35px;
+}
+
+
+
+@media screen and (min-width: 439px) {
+    .passados-titulos {
+        font-size: calc(92vw * 0.0296886597);
+    }
+}
+
+@media screen and (min-width: 586px) {
+    .escala-titulo {
+        font-size: calc(92vw * 0.0296886597);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .rodape__logo--com-calc {
+        height: 160px;
+        margin: 35px 0;
+    }
+}
+
+@media screen and (min-width: 1113px) {
+    .conteudo {
+        gap: 44.8px;
+    }
+
+    .conteudo__meses {
+        gap: 128px;
+    }
+
+    .escala-titulo {
+        font-size: 1.9rem;
+    }
+
+    .passados-titulos {
+        font-size: 1.9rem;
+        margin-bottom: 22.5px;
+    }
+
+    .aviso {
+        font-size: 1.33rem;
+    }
+
+
+    .tabelas {
+        display: flex;
+        flex-direction: column;
+        line-height: normal;
+        gap: 48px;
+    }
+
+    .tabela, .tabela__titulos, .tabela__titulo, .tabela__corpo, .tabela__conteudo {
+        border: 2px solid var(--preto);
+    }
+
+    caption {
+        font-size: 1.3rem;
+        margin-bottom: 8px;
+    }
+
+    .tabela__titulo {
+        font-size: 0.92rem;
+        padding: 2.4px;
+    }
+
+    .tabela__conteudo {
+        font-size: 0.9rem;
+        padding: 4.8px 7.2px;
+    }
+
+    .tabela__conteudo strong {
+        letter-spacing: -0.35px;
+    }
+
+    .cultos-e-ensaios {
+        margin-top: 48px;
+    }
+}

@@ -1,0 +1,118 @@
+@import url("./reset.css");
+@import url("./styles/header.css");
+@import url("./styles/footer.css");
+
+:root {
+    --branco: #fff;
+    --branco-opcoes: #f1f1f1;
+    --vermelho: #C11D20;
+    --vermelho-esmaecido: #C23031;
+    --preto: #000;
+    --preto-hover-linktree: #0F0F0F;
+    --preto-opcoes-texto-ativo: #1f1f1f;
+    --preto-opcoes-inativo: #272727;
+    --cinza-opcoes-hover: #3f3f3f;
+    --cinza: #555;
+    --cinza-nav-passados: #FAFAFA;
+    
+    --cor-fundo: var(--branco);
+
+    --cor-fonte-cabecalho: var(--vermelho);
+    
+    --cor-fundo-rodape: var(--vermelho);
+    --cor-fonte-rodape: var(--preto);
+
+    --fonte-principal: 'Montserrat', sans-serif;
+    --fonte-secundaria: 'Open Sans', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    color: var(--preto);
+    background-color: var(--cor-fundo);
+    min-height: 100vh;
+}
+
+header, main {
+    max-width: 1024px;
+}
+
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 25px;
+    max-width: 700px;
+}
+
+.conteudo__titulo {
+    font-size: 1.7rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.conteudo__subtitulo {
+    font-size: 1.025rem;
+    font-weight: 600;
+    text-align: center;
+    color: var(--cinza);
+    margin-bottom: 22px;
+    line-height: 1.1em;
+}
+
+.conteudo__texto {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--preto);
+    margin-bottom: 25px;
+}
+
+
+@media screen and (min-width: 768px) {
+    .conteudo {
+        padding: 32px 30px;
+    }
+    
+    .conteudo__titulo {
+        font-size: 1.85rem;
+        margin-bottom: 5.5px;
+    }
+    
+    .conteudo__subtitulo {
+        font-size: 1.11875rem;
+        margin-bottom: 28.5px;
+    }
+    
+    .conteudo__texto {
+        font-size: 1.075rem;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .conteudo {
+        padding: 65px 40px;
+    }
+    
+    .conteudo__titulo {
+        font-size: 2rem;
+        margin-bottom: 6px;
+    }
+    
+    .conteudo__subtitulo {
+        font-size: 1.2125rem;
+        margin-bottom: 35px;
+    }
+    
+    .conteudo__texto {
+        font-size: 1.15rem;
+        margin-bottom: 35px;
+    }
+}

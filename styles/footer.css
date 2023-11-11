@@ -1,0 +1,81 @@
+.rodape {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+}
+
+
+.rodape__logo {
+    height: 130px;
+    opacity: 0.65;
+    margin: 25px 0;
+}
+
+.opacidade-25 {
+    opacity: 0.25;
+}
+
+
+.rodape__conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-fundo-rodape);
+    padding: 15px;
+    width: calc(100vw - 30px);
+    gap: 13px;
+}
+
+.rodape__links {
+    display: flex;
+    gap: 25px
+}
+
+.fa-brands {
+    font-size: 1.8rem;
+    color: var(--cor-fonte-rodape);
+}
+
+
+.rodape__texto {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--cor-fonte-rodape);
+    text-align: center;
+}
+
+
+@media screen and (min-width: 768px) {
+    .rodape__conteudo {
+        padding: 18px 18px 16px 18px;
+        width: calc(100vw - 36px);
+    }
+        
+    .rodape__logo {
+        height: 145px;
+        margin: 30px 0;
+    }
+
+    .rodape__texto {
+        font-size: 1.075rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .rodape__conteudo {
+        padding: 20px 20px 17px 20px;
+        width: calc(100vw - 40px);
+    }
+    
+    .rodape__logo {
+        height: 160px;
+        margin: 35px 0;
+    }
+    
+    .rodape__texto {
+        font-size: 1.15rem;
+    }
+}

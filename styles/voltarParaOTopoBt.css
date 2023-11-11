@@ -1,0 +1,63 @@
+#voltar-topo {
+    display: none;
+    position: fixed;
+    bottom: 25px;
+    right: 10px;
+    z-index: 99;
+    font-family: var(--fonte-principal);
+    font-size: 0.8rem;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    background-color: var(--vermelho);
+    color: var(--branco);
+    cursor: pointer;
+    padding: 0.85em;
+    border-radius: 8px;
+  }
+  
+#voltar-topo:active {
+    background-color: var(--vermelho-esmaecido);
+}
+
+
+@media screen and (min-width: 768px) {
+    #voltar-topo {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #voltar-topo {
+        right: 10px;
+        bottom: 40px;
+        left: auto;
+        font-size: 1rem;
+        font-weight: 400;
+        transition: background-color 0.1s ease-in-out;
+    }
+
+    #voltar-topo:hover {
+        background-color: var(--vermelho-esmaecido);
+        transition: background-color 0.1s ease-in-out;
+    }
+}
+
+@media screen and (min-width: 1423px) {
+    #voltar-topo {
+        right: auto;
+        bottom: 40px;
+        left: calc((100vw - 1024px) / 2 + 1024px + 20px);
+    }
+}
+
+
+@keyframes fade-in {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
