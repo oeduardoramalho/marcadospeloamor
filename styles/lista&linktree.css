@@ -23,8 +23,7 @@
     font-size: 1.0625rem;
     font-weight: 500;
     margin-bottom: 27.5px;
-    width: 90%;
-    max-width: calc(680px * 0.9);
+    max-width: 90%;
     gap: 2.5px;
 }
 
@@ -78,6 +77,12 @@
     height: 100%
 }
 
+
+@media screen and (min-width: 711px) {
+    .lista__musicas {
+        max-width: calc(680px * 0.9)
+    }
+}
 
 @media screen and (min-width: 768px) {
     .corpo__titulo {
