@@ -19,4 +19,4 @@ function topFunction() {
     document.documentElement.scrollTop = 0;
 }
 
-mybutton.onclick = topFunction()
+mybutton.onclick = topFunction
