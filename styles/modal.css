@@ -1,0 +1,99 @@
+.janela-modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00000080;
+    backdrop-filter: blur(0.625px);
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.modal {
+    position: absolute;
+    background-color: var(--branco);
+    padding: 22px 26px;
+    border-radius: 20px;
+    margin: 0 4%;
+    max-width: 625px;
+}
+
+.modal-fechar {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -9px;
+    right: -9px;
+    height: 26.4px;
+    width: 26.4px;
+    background-color: rgb(243, 2, 2);
+    color: var(--branco);
+    border: 0;
+    border-radius: 50%;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.modal-titulo {
+    display: block;
+    text-align: center;
+    font-size: 1.725rem;
+    font-weight: 700;
+    color: var(--vermelho);
+    margin-bottom: 14px;
+}
+
+.modal-texto {
+    font-weight: 700;
+    font-size: 1.125rem;
+}
+
+
+@media screen and (min-width: 768px) {
+    .modal {
+        padding: 23.5px 30.5px;
+    }
+
+    .modal-fechar {
+        height: 28.2px;
+        width: 28.2px;
+        font-size: 1.175rem;
+    }
+
+    .modal-titulo {
+        font-size: 1.86rem;
+        margin-bottom: 15.5px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .modal {
+        padding: 25px 35px;
+    }
+
+    .modal-fechar {
+        height: 30px;
+        width: 30px;
+        font-size: 1.25rem;
+    }
+
+    .modal-titulo {
+        font-size: 2rem;
+        margin-bottom: 17px;
+    }
+}
+
+
+@keyframes fade-out {
+    from {
+        opacity: 1
+    }
+
+    to {
+        opacity: 0
+    }
+}

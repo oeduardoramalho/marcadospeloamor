@@ -4,6 +4,7 @@
 @import url("./styles/tabelas.css");
 @import url("./styles/caixa-nav-passados.css");
 @import url("./styles/voltarParaOTopoBt.css");
+@import url("./styles/modal.css");
 
 :root {
     --branco: #fff;
