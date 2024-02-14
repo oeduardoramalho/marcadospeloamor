@@ -68,6 +68,10 @@
         font-size: 1.86rem;
         margin-bottom: 15.5px;
     }
+
+    .modal-texto {
+        font-size: 1.2rem;
+    }   
 }
 
 @media screen and (min-width: 1024px) {
@@ -85,6 +89,10 @@
         font-size: 2rem;
         margin-bottom: 17px;
     }
+
+    .modal-texto {
+        font-size: 1.28rem;
+    }    
 }
 
 
