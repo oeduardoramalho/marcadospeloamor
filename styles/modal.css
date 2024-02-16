@@ -12,6 +12,10 @@
     z-index: 2;
 }
 
+.disabled {
+    display: none;
+}
+
 .modal {
     position: absolute;
     background-color: var(--branco);
@@ -55,7 +59,7 @@
 
 @media screen and (min-width: 768px) {
     .modal {
-        padding: 23.5px 30.5px;
+        padding: 23.5px 28.5px;
     }
 
     .modal-fechar {
@@ -76,7 +80,7 @@
 
 @media screen and (min-width: 1024px) {
     .modal {
-        padding: 25px 35px;
+        padding: 25px 31px;
     }
 
     .modal-fechar {
