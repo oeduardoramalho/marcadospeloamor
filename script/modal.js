@@ -10,7 +10,6 @@ const dataInicial = dataFinal - (86400000 * 5)
 
 var hoje = new Date().getTime()
 
-
 if (hoje >= dataInicial && hoje < dataFinalAmanha) {
     janelaModal.classList.remove('disabled')
     aviso.style.color = 'var(--preto)'
@@ -28,7 +27,6 @@ if (hoje >= dataFinalOntem && hoje <= dataFinal) {
 } else {
     modalTexto.innerHTML = aviso.innerHTML
 }
-
 
 function fecharModal() {
     janelaModal.style.animation = 'fade-out .2s forwards';
