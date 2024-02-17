@@ -10,6 +10,11 @@ const dataInicial = dataFinal - (86400000 * 5)
 
 var hoje = new Date().getTime()
 
+modalTexto.innerHTML = aviso.innerHTML
+const modalData = modalTexto.querySelector('.data-evento')
+const modalDia = modalTexto.querySelector('.dia-evento')
+
+// aparecer e sumir modal nos dias certos
 if (hoje >= dataInicial && hoje < dataFinalAmanha) {
     janelaModal.classList.remove('disabled')
     aviso.style.color = 'var(--preto)'
@@ -18,15 +23,18 @@ if (hoje >= dataInicial && hoje < dataFinalAmanha) {
     aviso.style.color = 'var(--vermelho)'
 }
 
+// alterar data para "amanha" e "hoje"
 if (hoje >= dataFinalOntem && hoje <= dataFinal) {
-    modalTexto.innerHTML = `Reunião Geral <span style="text-decoration: underline">AMANHÃ</span> (sexta-feira) às 20h<br>
-    Local: Igreja`
+    modalData.textContent = 'AMANHÃ'
+    modalData.setAttribute('style', 'text-decoration: underline')
 } else if (hoje >= dataFinal && hoje <= dataFinalAmanha) {
-    modalTexto.innerHTML = `Reunião Geral <span style="text-decoration: underline">HOJE</span> às 20h<br>
-    Local: Igreja`
+    modalData.textContent = 'HOJE'
+    modalData.setAttribute('style', 'text-decoration: underline')
+    modalDia.style.display = 'none'
 } else {
     modalTexto.innerHTML = aviso.innerHTML
 }
+
 
 function fecharModal() {
     janelaModal.style.animation = 'fade-out .2s forwards';
