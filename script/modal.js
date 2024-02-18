@@ -18,6 +18,9 @@ const modalDia = modalTexto.querySelector('.dia-evento')
 if (hoje >= dataInicial && hoje < dataFinalAmanha) {
     janelaModal.classList.remove('disabled')
     aviso.style.color = 'var(--preto)'
+} else if (hoje >= dataFinalAmanha) {
+    janelaModal.classList.add('disabled')
+    aviso.style.color = 'var(--preto)'
 } else {
     janelaModal.classList.add('disabled')
     aviso.style.color = 'var(--vermelho)'

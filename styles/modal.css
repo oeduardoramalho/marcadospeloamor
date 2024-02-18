@@ -30,8 +30,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    top: -9px;
-    right: -9px;
+    top: -7.92px;
+    right: -7.92px;
     height: 26.4px;
     width: 26.4px;
     background-color: rgb(243, 2, 2);
@@ -63,6 +63,8 @@
     }
 
     .modal-fechar {
+        top: -8.46px;
+        right: -8.46px;
         height: 28.2px;
         width: 28.2px;
         font-size: 1.175rem;
@@ -74,7 +76,7 @@
     }
 
     .modal-texto {
-        font-size: 1.78rem;
+        font-size: 1.178rem;
     }   
 }
 
