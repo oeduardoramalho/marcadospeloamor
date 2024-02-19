@@ -1,4 +1,3 @@
-const fechar = document.querySelector('#modal-fechar')
 const janelaModal = document.querySelector('#janela-modal')
 const aviso = document.querySelector('.aviso')
 const modalTexto = document.querySelector('.modal-texto')
@@ -6,7 +5,7 @@ const modalTexto = document.querySelector('.modal-texto')
 const dataFinal = new Date("Feb 23 2024").getTime()
 const dataFinalOntem = dataFinal - 86400000
 const dataFinalAmanha = dataFinal + 86400000
-const dataInicial = dataFinal - (86400000 * 5)
+const dataInicial = dataFinal - (86400000 * 4)
 
 var hoje = new Date().getTime()
 
@@ -38,13 +37,11 @@ if (hoje >= dataFinalOntem && hoje <= dataFinal) {
     modalTexto.innerHTML = aviso.innerHTML
 }
 
-
-function fecharModal() {
-    janelaModal.style.animation = 'fade-out .2s forwards';
-    setTimeout(() => {
-        janelaModal.style.display = 'none'
-    }, 200)
-}
-
-fechar.onclick = fecharModal
-janelaModal.onclick = fecharModal
+janelaModal.addEventListener('click', (e) => {
+    if (e.target.id == 'janela-modal' || e.target.id == 'modal-fechar') {
+        janelaModal.style.animation = 'fade-out .2s forwards';
+        setTimeout(() => {
+            janelaModal.style.display = 'none'
+        }, 200)
+    }
+})
