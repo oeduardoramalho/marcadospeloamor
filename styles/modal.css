@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: center;
     background-color: #00000080;
+    -webkit-backdrop-filter: blur(0.625px);
     backdrop-filter: blur(0.625px);
     height: 100vh;
     width: 100vw;
@@ -23,6 +24,7 @@
     border-radius: 20px;
     margin: 0 4%;
     max-width: 625px;
+    z-index: 3;
 }
 
 .modal-fechar {
@@ -30,6 +32,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0;
     top: -7.92px;
     right: -7.92px;
     height: 26.4px;
@@ -86,6 +89,8 @@
     }
 
     .modal-fechar {
+        top: -9px;
+        right: -9px;
         height: 30px;
         width: 30px;
         font-size: 1.25rem;
