@@ -86,6 +86,7 @@
 @media screen and (min-width: 1024px) {
     .modal {
         padding: 25px 31px;
+        min-width: 350px;
     }
 
     .modal-fechar {
