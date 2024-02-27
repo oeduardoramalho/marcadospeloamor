@@ -32,6 +32,7 @@
 
 .aviso {
     align-self: flex-start;
+    color: var(--vermelho);
     font-size: calc(92vw * 0.0207820618);
     font-weight: 700;
 }
