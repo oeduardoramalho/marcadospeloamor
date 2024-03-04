@@ -15,13 +15,13 @@ const modalDia = modalTexto.querySelector('.dia-evento')
 
 // aparecer e sumir modal nos dias certos
 if (hoje >= dataInicial && hoje < dataFinalAmanha) {
-    janelaModal.classList.remove('disabled')
+    janelaModal.classList.remove('hidden')
     aviso.style.color = 'var(--preto)'
 } else if (hoje >= dataFinalAmanha) {
-    janelaModal.classList.add('disabled')
+    janelaModal.classList.add('hidden')
     aviso.style.color = 'var(--preto)'
 } else {
-    janelaModal.classList.add('disabled')
+    janelaModal.classList.add('hidden')
     aviso.style.color = 'var(--vermelho)'
 }
 
