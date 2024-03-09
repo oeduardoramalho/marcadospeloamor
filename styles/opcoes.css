@@ -19,9 +19,9 @@
 
 .corpo__opcoes-lista {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 33px;
     margin: 0 auto;
-    max-width: 198.5px;
 }
 
 .corpo__opcoes-botao {
@@ -49,6 +49,13 @@
     background-color: var(--branco-opcoes);
 }
 
+
+@media screen and (min-width: 310px) {
+    .corpo__opcoes-lista {
+        gap: 45px;
+    }
+}
+
 @media screen and (min-width: 768px) {
     .corpo {
         padding: 32px 0 18px;
@@ -59,7 +66,7 @@
     }
 
     .corpo__opcoes-lista {
-        max-width: 212px;
+        gap: 55px;
     }
 }
 
@@ -70,6 +77,10 @@
 
     .corpo__opcoes {
         margin-bottom: 45px;
+    }
+
+    .corpo__opcoes-lista {
+        gap: 55px;
     }
 
     .corpo__opcoes-botao:hover {
