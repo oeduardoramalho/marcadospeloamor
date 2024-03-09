@@ -79,10 +79,6 @@
         margin-bottom: 45px;
     }
 
-    .corpo__opcoes-lista {
-        gap: 55px;
-    }
-
     .corpo__opcoes-botao:hover {
         background-color: var(--cinza-opcoes-hover);
         transition: background-color .25s ease-in-out;
